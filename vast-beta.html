@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+
+<script src="http://vjs.zencdn.net/4.4.3/video.js"></script>
+<script src="vast-client.js"></script>
+<script src="video.ads.js"></script>
+<script src="videojs.vast.js"></script>
+
+<script>
+    var vid1 = videojs('vid1'),
+        vid2 = videojs('vid2');
+
+    vid1.muted(false);
+    vid1.ads();
+    vid1.vast({
+      url: 'https://www.videosprofitnetwork.com/watch.xml?key=bbff8652f9f18ede23778423f7a55118'
+    });
+
+    vid2.muted(true);
+    vid2.ads();
+    vid2.vast({
+      url: 'https://www.videosprofitnetwork.com/watch.xml?key=bbff8652f9f18ede23778423f7a55118'
+    });
+</script>
+
+<head>
