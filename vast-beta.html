@@ -1,26 +1,45 @@
 <!DOCTYPE html>
 <head>
 
-<script src="http://vjs.zencdn.net/4.4.3/video.js"></script>
-<script src="vast-client.js"></script>
-<script src="video.ads.js"></script>
-<script src="videojs.vast.js"></script>
-
+<script src="//cdnapisec.kaltura.com/p/243342/sp/24334200/embedIframeJs/uiconf_id/13920942/partner_id/243342">
+</script>
+<div id="kaltura_player_1619790588075" style="width:430px;height:330px;" itemprop="video" itemscope itemtype="http://schema.org/VideoObject" >
+	<!-- Search engine metadata, based on schema.org/VideoObject -->
+	<span itemprop="description" content="A dated advertisment for Folgers Coffee"></span>
+	<span itemprop="name" content="Folgers Coffee"></span>
+	<span itemprop="duration" content="60"></span>
+	<span itemprop="thumbnailUrl" content="http://cfvod.kaltura.com/p/243342/sp/24334200/thumbnail/entry_id/0_uka1msg4/version/100007"></span>
+	<span itemprop="width" content="430"></span>
+	<span itemprop="height" content="330"></span>
+</div>
 <script>
-    var vid1 = videojs('vid1'),
-        vid2 = videojs('vid2');
-
-    vid1.muted(false);
-    vid1.ads();
-    vid1.vast({
-      url: 'https://www.videosprofitnetwork.com/watch.xml?key=bbff8652f9f18ede23778423f7a55118'
-    });
-
-    vid2.muted(true);
-    vid2.ads();
-    vid2.vast({
-      url: 'https://www.videosprofitnetwork.com/watch.xml?key=bbff8652f9f18ede23778423f7a55118'
-    });
+	kWidget.embed({
+		targetId: "kaltura_player_1619790588075",
+		wid: "_243342",
+		uiconf_id: "13920942",
+		entry_id: "0_uka1msg4",
+		flashvars: {
+			"vast": {
+				"prerollUrl" : "http://projects.kaltura.com/mdale/hotelVastAd.xml?myRefurl=http%3A//myref.com/%3Ffoo%3Dbar%26cat%3Ddog{utility.nativeAdId}",
+				"numPreroll" : "1",
+				"preSequence" : "1",
+				"htmlCompanions" : "testCompanion:300:250;testLongCompanion:728:90;",
+				"timeout" : "4",
+				"storeSession" : false,
+				"skipOffset" : "5",
+				"unescapeAdUrls" : false
+			},
+			"skipBtn": {
+				"skipOffset" : "5",
+				"label" : "Skip Ad"
+			},
+			"noticeMessage": {
+				"text" : "Advertisment {sequenceProxy.timeRemaining|timeFormat}"
+			},
+			"adsOnReplay" : true,
+			"inlineScript" : false
+		}
+})
 </script>
 
 <head>
